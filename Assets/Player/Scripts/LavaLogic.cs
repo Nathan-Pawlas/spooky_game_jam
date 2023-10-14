@@ -26,12 +26,10 @@ public class LavaLogic : MonoBehaviour
     }
     private void OnCollisionStay(Collision collision)
     {
-        Debug.Log("ass");
         rising = false;
     }
     private void OnCollisionExit(Collision collision)
     {
-        Debug.Log("titties");
         rising = true;
     }
 }
