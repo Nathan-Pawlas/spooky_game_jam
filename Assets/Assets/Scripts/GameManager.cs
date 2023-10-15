@@ -7,8 +7,10 @@ using UnityEngine.Timeline;
 public class GameManager : MonoBehaviour
 {
     bool alive = true;
+    bool done = false;
     public GameObject deathScreen;
     public PlayableDirector director;
+    public float time;
 
     private void Start()
     {
@@ -22,6 +24,10 @@ public class GameManager : MonoBehaviour
         {
             setDeathScreen();
         }
+        if (!done)
+        {
+            time += Time.deltaTime;
+        }
     }
 
     private void setDeathScreen()
@@ -34,5 +40,10 @@ public class GameManager : MonoBehaviour
     public void setDead()
     {
         alive = !alive;
+    }
+
+    public void Done()
+    {
+        done = !done;
     }
 }

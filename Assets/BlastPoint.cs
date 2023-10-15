@@ -8,7 +8,8 @@ public class BlastPoint : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            other.gameObject.GetComponentInParent<Rigidbody>().AddForce(new Vector3(0, 44f, 0), ForceMode.Impulse);
+            other.gameObject.GetComponentInParent<Rigidbody>().velocity = Vector3.zero;
+            other.gameObject.GetComponentInParent<Rigidbody>().AddForce(new Vector3(0, 40f, 0), ForceMode.Impulse);
         }
     }
 }

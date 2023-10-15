@@ -7,14 +7,15 @@ using UnityEngine.UI;
 public class TestUI : MonoBehaviour
 {
     public TextMeshProUGUI speed;
-    public TextMeshProUGUI state;
+    public TextMeshProUGUI time;
 
     public PlayerMovement pm;
+    public GameManager gm;
 
 
     private void Update()
     {
         speed.text = "Speed: " + (Mathf.Round(pm.rb.velocity.magnitude * 100f) *0.01f).ToString();
-        state.text = pm.state.ToString();
+        time.text = ((int)gm.time).ToString() + "s";
     }
 }

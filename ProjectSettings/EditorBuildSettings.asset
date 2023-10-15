@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/NonLevel/MainMenu.unity
     guid: cc7bcfb6532be429c879b4a4980443a7
   - enabled: 0
@@ -14,10 +14,19 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/NonLevel/LevelSelect.unity
     guid: 964a616921880d443aa71d395e7ac766
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/NonLevel/EndSceen.unity
     guid: 8336ee5ba599244c1bf0094466f7be8c
+  - enabled: 1
+    path: Assets/Scenes/NateScene.unity
+    guid: 60ed9de005424974dbc4ea37c647423b
+  - enabled: 1
+    path: Assets/Scenes/TheClimb.unity
+    guid: 98a12af85e630d249a4bace4b01204b7
+  - enabled: 1
+    path: Assets/Unvik_3D/Woodland/Scene/WoodLand.unity
+    guid: 483513895f96a334a96212493292d947
   m_configObjects: {}
